@@ -3,6 +3,7 @@ package ro.cni.course.deutschebank.day6.reflection;
 public class ReflectionDummy extends ReflectionDummyParent{
 
     public String address = "NOWHERE";
+    private String privateSecret = "privateSecret";
 
     public ReflectionDummy() {
     }

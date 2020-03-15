@@ -11,8 +11,7 @@ public class ClassReflection {
 
 //        classStuff(aClass);
 //        constructorStuff(aClass);
-//        fieldStuff(aClass);
-
+//        fieldStuff(aClass, reflectionDummy);
     }
 
     private static void constructorStuff(final Class<? extends ReflectionDummy> aClass) {
@@ -34,13 +33,6 @@ public class ClassReflection {
         }
     }
 
-    private static void fieldStuff(final Class<? extends ReflectionDummy> aClass) {
-        final Field[] fields = aClass.getFields();
-        for(Field field: fields) {
-            System.out.println(field.getName());
-        }
-    }
-
     private static void classStuff(final Class<? extends ReflectionDummy> aClass) {
         System.out.println(aClass.getName());
         System.out.println(aClass.getSimpleName());
@@ -48,5 +40,22 @@ public class ClassReflection {
         final int modifiers = aClass.getModifiers();
 
         System.out.println(Modifier.isPublic(modifiers));
+    }
+
+    private static void fieldStuff(final Class<? extends ReflectionDummy> aClass,
+                                   final ReflectionDummy reflectionDummy) {
+        final Field[] fields = aClass.getDeclaredFields();
+        for(Field field: fields) {
+            System.out.print("Field: " + field.getName());
+            try {
+                if(Modifier.isPrivate(field.getModifiers())) {
+                    field.setAccessible(true);
+                }
+                System.out.print("Value: " + field.get(reflectionDummy));
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+            System.out.println();
+        }
     }
 }
