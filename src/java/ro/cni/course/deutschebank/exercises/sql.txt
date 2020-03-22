@@ -1,0 +1,20 @@
+1. Create the following tables:
+- A table named shopping_cart with the following fields:
+    - id - big int ----> primary key
+    - client_name - varchar 255
+    - delivery_city - varchar 255
+    - delivery_street - varchar 255
+    - delivery number - varchar 10
+    - order_status - varchar 255
+    - order_total - decimal
+
+- A table named shopping_cart_item with the following fields:
+    - id - big int ---> primary key
+    - quantity - int
+    - unit_price - decimal
+    - total_price - decimal
+    - product_code - int
+    - shopping_cart_id ---> foreign key from shopping_cart
+
+
+2.
