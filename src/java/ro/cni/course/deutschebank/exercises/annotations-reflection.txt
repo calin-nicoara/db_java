@@ -1,0 +1,36 @@
+# Annotations exercises
+1. Create a custom annotation called JsonField with the following fields:
+* name ---> String
+* canBeNull ---> boolean. Default values is 'true'
+* lengthToTrimString ----> int. Default 255
+
+This annotation should be retained on runtime and be applicable only to fields of classes.
+
+2. Create an interface called AccountCalculator with just one abstract method: double calculateTax(int totalAmount, double interest);
+Add the @FunctionalInterface to the class. Then try to add another abstract method. What happens?
+
+
+3. Using the @JsonField annotation you build at exercise 1, create a static function called toJson that transforms
+a object whose class has the @JsonField annotation on the fields and returns a json. Ex:
+
+public class Product {
+
+    @JsonField(name= "code")
+    public int id;
+
+    @JsonField
+    public String name;
+
+    @JsonField(lengthToTrimString = 20)
+    public String description;
+
+    public String storeName;
+}
+
+Product product = new Product(100, "Coca-Cola", "A tasty delicious drink", "Carrefour")
+
+String json = toJson(product)
+System.out.println(json); // { "code": 100, "name": "Coca-Cola", "description": 5}
+
+Notice that fields not annotated with @JsonField do not appear in the Json. And if a name is not specified
+than the name of field itself is used.
