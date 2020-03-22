@@ -1,4 +1,4 @@
-create database
+create database db_course;
 
 create table client (
     id bigint,
@@ -7,3 +7,4 @@ create table client (
     price numeric(19,2),
     category varchar(255)
 );
+
