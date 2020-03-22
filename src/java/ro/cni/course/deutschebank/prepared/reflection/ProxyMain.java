@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.reflection;
+package ro.cni.course.deutschebank.prepared.reflection;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

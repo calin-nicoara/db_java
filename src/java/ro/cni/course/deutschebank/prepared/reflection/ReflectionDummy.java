@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.reflection;
+package ro.cni.course.deutschebank.prepared.reflection;
 
 public class ReflectionDummy extends ReflectionDummyParent{
 
@@ -6,6 +6,10 @@ public class ReflectionDummy extends ReflectionDummyParent{
     private String privateSecret = "privateSecret";
 
     public ReflectionDummy() {
+    }
+
+    public String getName(String test) {
+        return super.getName();
     }
 
     public ReflectionDummy(String address){

@@ -1,3 +1,5 @@
+create database
+
 create table client (
     id bigint,
     brand varchar(255),

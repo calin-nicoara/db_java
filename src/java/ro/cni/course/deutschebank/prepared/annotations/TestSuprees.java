@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.annotations;
+package ro.cni.course.deutschebank.prepared.annotations;
 
 import java.util.Arrays;
 import java.util.List;
