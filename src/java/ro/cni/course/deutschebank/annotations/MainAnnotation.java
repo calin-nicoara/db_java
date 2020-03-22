@@ -1,4 +1,5 @@
-package ro.cni.course.deutschebank.day6.annotations;
+package ro.cni.course.deutschebank.annotations;
+
 
 
 public class MainAnnotation {

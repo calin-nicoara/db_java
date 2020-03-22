@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.day6.annotations;
+package ro.cni.course.deutschebank.annotations;
 
 
 import java.lang.annotation.ElementType;

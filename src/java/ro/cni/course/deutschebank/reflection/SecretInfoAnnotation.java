@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.day6.reflection;
+package ro.cni.course.deutschebank.reflection;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,6 +1,5 @@
-package ro.cni.course.deutschebank.day6.annotations;
+package ro.cni.course.deutschebank.annotations;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
