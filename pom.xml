@@ -80,6 +80,17 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.12.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vladmihalcea</groupId>
+            <artifactId>hibernate-types-52</artifactId>
+            <version>2.9.6</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -96,7 +107,7 @@
                     <!-- MainClass in mainfest make a executable jar -->
                     <archive>
                         <manifest>
-                            <mainClass>ro.cni.course.deutschebank.prepared.sql.jdbc.ProductRepository</mainClass>
+                            <mainClass>ro.cni.course.deutschebank.prepared.sql.hibernate.HibernateMain</mainClass>
                             <addClasspath>true</addClasspath>
                         </manifest>
                     </archive>
