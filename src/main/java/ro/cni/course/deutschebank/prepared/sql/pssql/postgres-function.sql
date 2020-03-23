@@ -4,7 +4,11 @@ DECLARE
 BEGIN
     return i + 20;
 end;
-$$ LANGUAGE plpqsql;
+$$ LANGUAGE plpgsql;
 
 
-call testThisFunction(40);
+select id, testThisFunction(id) from client_order;
+
+
+
+
