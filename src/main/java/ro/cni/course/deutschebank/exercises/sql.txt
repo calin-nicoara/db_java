@@ -17,4 +17,7 @@
     - shopping_cart_id ---> foreign key from shopping_cart
 
 
-2.
+2. Create a query gives the most sold products (using total_prices) in the different cities (using delivery_city)
+
+3. Create hibernate classes for the above tables.
+Make a method that get all the shopping_cart_items(the entity objects) from a city(using delivery_city) (passed as a parameter)
