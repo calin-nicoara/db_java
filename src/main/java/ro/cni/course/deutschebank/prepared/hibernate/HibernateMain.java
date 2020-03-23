@@ -7,12 +7,21 @@ public class HibernateMain {
         final Session session = SessionFactoryManager.getSessionFactory().openSession();
 
         session.beginTransaction();
+//        saveNEwClient(session);
+
+        final ClientOrder clientOrder = session.get(ClientOrder.class, 3);
+        System.out.println(clientOrder);
+
+        session.getTransaction().commit();
+        session.close();
+
+
+    }
+
+    private static void saveNEwClient(final Session session) {
         final ClientOrder clientOrder = new ClientOrder();
         clientOrder.setId(-1);
         clientOrder.setClientName("Ionut");
         session.save(clientOrder);
-
-        session.getTransaction().commit();
-        session.close();
     }
 }
