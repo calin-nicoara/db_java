@@ -31,6 +31,18 @@ public class ClientOrder {
     private Boolean isDomestic;
 
     @Override
+    public String toString() {
+        return "ClientOrder{" +
+                "id=" + id +
+                ", clientName='" + clientName + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", totalOrderValue=" + totalOrderValue +
+                ", deliveryId=" + deliveryId +
+                ", isDomestic=" + isDomestic +
+                '}';
+    }
+
+    @Override
     public boolean equals(final Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

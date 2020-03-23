@@ -5,7 +5,7 @@ import org.hibernate.Session;
 public class HibernateMain {
     public static void main(String[] args) {
         final Session session = SessionFactoryManager.getSessionFactory().openSession();
-
+        System.out.println();
         session.beginTransaction();
 //        saveNEwClient(session);
 
