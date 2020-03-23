@@ -35,4 +35,4 @@ System.out.println(json); // { "code": 100, "name": "Coca-Cola", "description": 
 Notice that fields not annotated with @JsonField do not appear in the Json. And if a name is not specified
 than the name of field itself is used.
 
-4. Create a static method which received Method and return is that method is a valid setter.
+4. Create a static method which receives a Method object and return if that method is a valid setter method.
