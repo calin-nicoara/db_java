@@ -14,8 +14,6 @@ public class HibernateMain {
 
         session.getTransaction().commit();
         session.close();
-
-
     }
 
     private static void saveNEwClient(final Session session) {
