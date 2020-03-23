@@ -24,8 +24,8 @@ public class ProductRepository {
 
     private static final String PRODUCT_SELECT = "Select id, name, price, brand from product";
 
-    public List<ro.cni.course.deutschebank.prepared.sql.jdbc.Product> getAllProducts() {
-        List<ro.cni.course.deutschebank.prepared.sql.jdbc.Product> products = new ArrayList<>();
+    public List<Product> getAllProducts() {
+        List<Product> products = new ArrayList<>();
 
         Connection connection = getConnection();
 
