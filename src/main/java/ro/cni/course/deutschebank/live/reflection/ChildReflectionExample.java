@@ -1,6 +1,5 @@
 package ro.cni.course.deutschebank.live.reflection;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class ChildReflectionExample extends ReflectionExample {

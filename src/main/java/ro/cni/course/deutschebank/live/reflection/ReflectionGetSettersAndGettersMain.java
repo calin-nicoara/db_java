@@ -1,7 +1,6 @@
 package ro.cni.course.deutschebank.live.reflection;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
 import java.util.Arrays;
 
 public class ReflectionGetSettersAndGettersMain {
