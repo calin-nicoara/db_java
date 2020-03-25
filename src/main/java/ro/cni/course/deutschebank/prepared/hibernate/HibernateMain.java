@@ -1,11 +1,21 @@
 package ro.cni.course.deutschebank.prepared.hibernate;
 
 import org.hibernate.Session;
+import org.hibernate.query.Query;
+
+import java.util.List;
 
 public class HibernateMain {
     public static void main(String[] args) {
         final Session session = SessionFactoryManager.getSessionFactory().openSession();
 
+        String getAll = "SELECT co.id, co.clientName FROM ClientOrder co";
+        final Query query = session.createQuery(getAll);
+        final List<Object[]> list = (List<Object[]>)query.list();
+        for(Object[] objectFields: list) {
+            System.out.println(objectFields[0]);
+            System.out.println(objectFields[1]);
+        }
 
 //        saveNEwClient(session);
 

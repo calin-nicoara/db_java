@@ -27,6 +27,9 @@ ORDER BY city ASC, id DESC;
 
 -- Try to avoid!!!!
 select * from client
+where city LIKE '%Bucure%';
+
+select * from client
 where city LIKE 'Bucure%';
 
 select * from client
@@ -53,10 +56,61 @@ select count(*), city from client
 group by city
 order by count(*);
 
+select count(id), city from client
+where last_name = 'Popescu'
+group by city
+HAVING count(*) > 3
+order by city;
+
+select sum(id) from client;
+
+
+
+
 select * from client
-order by id;
+ORDER BY id LIMIT 5 OFFSET 15;
 
+Select phone_number, client.first_name from client
+where first_name IN (Select client_name from client_order where is_domestic = true);
 
+Select phone_number, client.first_name from client
+where (first_name, true) IN (Select client_name, is_domestic from client_order where is_domestic = true);
+
+select  * from client;
+
+select c.first_name from client c
+UNION
+select co.client_name from client_order co;
+
+select c.first_name from client c
+INTERSECT
+select co.client_name from client_order co;
+
+select * from client
+where last_name IS NULL;
+
+select * from client
+where last_name IS NOT NULL;
+
+select last_name, phone_number, COALESCE(last_name, phone_number, 'DEFAULT') from client;
+
+select
+       case
+           when last_name IS NULL then 'last_name_is_null'
+            else 'last_name_not_null'
+        end,
+       last_name,
+       phone_number
+from client;
+
+select
+    case
+        when quantity IS NOT NULL then quantity * product_price
+        else 0
+    end As total
+from order_product_line;
+
+select * from order_product_line;
 
 
 

@@ -21,3 +21,5 @@
 
 3. Create hibernate classes for the above tables.
 Make a method that get all the shopping_cart_items(the entity objects) from a city(using delivery_city) (passed as a parameter)
+
+https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm

@@ -30,7 +30,7 @@ public class Product {
 Product product = new Product(100, "Coca-Cola", "A tasty delicious drink", "Carrefour")
 
 String json = toJson(product)
-System.out.println(json); // { "code": 100, "name": "Coca-Cola", "description": 5}
+System.out.println(json); // { "code": 100, "name": "Coca-Cola", "description": "A tasty delicious dr"}
 
 Notice that fields not annotated with @JsonField do not appear in the Json. And if a name is not specified
 than the name of field itself is used.

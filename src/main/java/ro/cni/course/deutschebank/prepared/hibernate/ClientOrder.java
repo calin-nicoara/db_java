@@ -1,9 +1,6 @@
 package ro.cni.course.deutschebank.prepared.hibernate;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.lang.annotation.Target;
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -13,6 +10,7 @@ import java.util.Objects;
 public class ClientOrder {
 
     @Id
+    @GeneratedValue
     private Integer id;
 
     @Column(name = "client_name")
