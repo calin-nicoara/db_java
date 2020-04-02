@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.live.reflection;
+package ro.cni.course.dbcourse.live.reflection;
 
 public class ReflectionExample {
 

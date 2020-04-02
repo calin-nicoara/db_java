@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.prepared.annotations;
+package ro.cni.course.dbcourse.prepared.annotations;
 
 @CustomAnnotation(
         name = "me",

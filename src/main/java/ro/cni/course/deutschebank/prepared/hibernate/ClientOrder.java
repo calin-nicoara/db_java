@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.prepared.hibernate;
+package ro.cni.course.dbcourse.prepared.hibernate;
 
 import javax.persistence.*;
 import java.lang.annotation.Target;

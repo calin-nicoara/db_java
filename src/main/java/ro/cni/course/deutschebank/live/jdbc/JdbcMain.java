@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.live.jdbc;
+package ro.cni.course.dbcourse.live.jdbc;
 
 import java.sql.*;
 

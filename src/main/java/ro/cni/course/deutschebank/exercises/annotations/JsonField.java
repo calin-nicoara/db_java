@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.exercises.annotations;
+package ro.cni.course.dbcourse.exercises.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

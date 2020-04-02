@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.live.annotations;
+package ro.cni.course.dbcourse.live.annotations;
 
 import java.util.ArrayList;
 import java.util.List;

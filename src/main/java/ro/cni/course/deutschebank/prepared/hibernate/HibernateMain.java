@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.prepared.hibernate;
+package ro.cni.course.dbcourse.prepared.hibernate;
 
 import org.hibernate.Session;
 import org.hibernate.query.Query;

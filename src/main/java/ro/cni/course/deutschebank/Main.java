@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank;
+package ro.cni.course.dbcourse;
 
 public class Main {
     public static void main(String[] args) {

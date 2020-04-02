@@ -1,9 +1,9 @@
-package ro.cni.course.deutschebank.live.jdbc;
+package ro.cni.course.dbcourse.live.jdbc;
 
 import org.hibernate.FlushMode;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
-import ro.cni.course.deutschebank.prepared.hibernate.SessionFactoryManager;
+import ro.cni.course.dbcourse.prepared.hibernate.SessionFactoryManager;
 
 import java.io.Serializable;
 import java.util.Arrays;

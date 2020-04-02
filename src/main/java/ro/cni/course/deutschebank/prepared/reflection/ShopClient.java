@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.prepared.reflection;
+package ro.cni.course.dbcourse.prepared.reflection;
 
 import java.time.LocalDateTime;
 

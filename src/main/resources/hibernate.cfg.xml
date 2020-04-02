@@ -11,8 +11,8 @@
         <property name="show_sql">true</property>
         <property name="current_session_context_class">thread</property>
 
-        <mapping class="ro.cni.course.deutschebank.prepared.hibernate.ClientOrder"/>
-        <mapping class="ro.cni.course.deutschebank.live.jdbc.Client" />
-        <mapping class="ro.cni.course.deutschebank.live.jdbc.ClientAddress" />
+        <mapping class="ro.cni.course.dbcourse.prepared.hibernate.ClientOrder"/>
+        <mapping class="ro.cni.course.dbcourse.live.jdbc.Client" />
+        <mapping class="ro.cni.course.dbcourse.live.jdbc.ClientAddress" />
     </session-factory>
 </hibernate-configuration>

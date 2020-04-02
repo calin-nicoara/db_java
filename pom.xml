@@ -71,7 +71,7 @@
                     <!-- MainClass in mainfest make a executable jar -->
                     <archive>
                         <manifest>
-                            <mainClass>ro.cni.course.deutschebank.prepared.sql.hibernate.HibernateMain</mainClass>
+                            <mainClass>ro.cni.course.dbcourse.prepared.sql.hibernate.HibernateMain</mainClass>
                             <addClasspath>true</addClasspath>
                         </manifest>
                     </archive>

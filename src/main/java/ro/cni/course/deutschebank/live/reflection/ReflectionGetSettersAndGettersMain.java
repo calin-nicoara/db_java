@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.live.reflection;
+package ro.cni.course.dbcourse.live.reflection;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

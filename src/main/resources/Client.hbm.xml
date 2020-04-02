@@ -3,7 +3,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="ro.cni.course.deutschebank.live.jdbc.ClientAddress" table="client_address">
+    <class name="ro.cni.course.dbcourse.live.jdbc.ClientAddress" table="client_address">
 
         <id name="id" type="java.lang.Integer" column="id">
             <generator class="identity" />

@@ -1,4 +1,4 @@
-package ro.cni.course.deutschebank.prepared.sql.jdbc;
+package ro.cni.course.dbcourse.prepared.sql.jdbc;
 
 
 import java.math.BigDecimal;
