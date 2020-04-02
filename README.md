@@ -1,5 +1,3 @@
-# Course for Deutsche Bank intership
-
 ## Day 1
 
 ### Academy - Introduction to JAVA
